@@ -1,5 +1,3 @@
-// récuper la vélocité, la couleur, la position en y et x
-
 class Circle {
     constructor(animation, balls = null ) {
         this.animation = animation;
@@ -37,10 +35,6 @@ class Circle {
     updateCoordinates(){
         this.posY += this.velocityY;
         this.posX += this.velocityX;
-        // 1) si je suis en bas de l'ecran j'inverse la velocité
-        // 2) quel facteur, si la balle monte la friction doit etre plus grande que la gravité et
-        // 3) la viteese est tres faible et la pos est proche du bord alors vitesse a 0 sinon calculer la position en rajouter la velocité
-
 
         if (this.x >= this.canvas.width - this.radius) {
             this.x = this.canvas.width - this.radius;
