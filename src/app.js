@@ -46,6 +46,5 @@ const Animation = {
     }
 };
 
-//window.addEventListener('resize', Animation.init());
 Animation.init();
 
